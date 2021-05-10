@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <style>
+        ul{
+            list-style-type: none;
+            display: flex;
+            padding:5px;
+            background-color:aqua;
+            justify-content: flex-end;
+
+        }
+        a{
+            text-decoration: none;
+            padding: 20px;
+            margin: 20px;
+        }
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .active{
+            background-color: brown;
+        }
+       .team{
+           background-color: orange;
+       } 
+    </style>
+</head>
+<ul>
+    <li>
+        <a href="nav.html">Home</a>
+    </li>
+<li>
+
+<a href="about.html">About Us</a>
+</li>
+<li>
+
+<a href="contact.html">Contact Us</a>
+</li>
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+</ul>
+<body >
+    <h2>Contact section</h2>
+    <div class="team" align=center>
+    <fieldset>
+        <legend align="center">Registration Details</legend>
+    <form>
+        <div><label for="a">Username</label></div>
+        
+       <input type="text" placeholder="Enter Username" name="user" required id="a" > 
+    
+       <div><label for="b">password</label></div> 
+        <input type="password" placeholder="password" name="password" required id="b" pattern=(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$&]).{5}>
+        <div><label for="c">DOB</label></div> 
+        <input type="date" name="DOB"required id="c">
+        <div><label for="e">Mobile Number</label></div>
+        <input type="text" placeholder="Mobile Number" name="Number" id="e"  pattern="[0-9]{10}" required>
+       <div><label for="f">Upload the files</label></div>
+       <input type="file" name="File" id="d" required accept="pdf"><!--No need of place holder-->
+        <div><label for="d">Gender</label></div>
+        <input type="radio" name="abc" id="d" required>M
+        <input type="radio" name="abc" id="d" required>F
+
+        <input type="submit" value="Login">
+    
+        
+    </form>
+</fieldset>
+
+</div>
+</body>
+</html>
